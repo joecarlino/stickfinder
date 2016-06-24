@@ -1,0 +1,30 @@
+{
+  "name": "stickfinder",
+  "version": "0.0.1",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joecarlino/stickfinder.git"
+  },
+  "author": "Joe Carlino",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/joecarlino/stickfinder/issues"
+  },
+  "homepage": "https://github.com/joecarlino/stickfinder#readme",
+  "dependencies": {
+    "bookshelf": "^0.9.5",
+    "express": "^4.13.4",
+    "knex": "^0.11.5",
+    "lodash": "^4.13.1",
+    "mocha": "^2.5.3",
+    "node-compass": "^0.2.4",
+    "node-sass-middleware": "^0.9.8",
+    "pg": "^5.1.0",
+    "pug": "^2.0.0-beta3"
+  }
+}
