@@ -1,0 +1,29 @@
+form(method="post", action="/find-stick/") 
+  .form-group
+    label(for='brands') brands
+    select.form-control(multiple, name="brands" id="brands") 
+      each value,key in search.optionLists.brands
+        option(value = key) #{value}
+
+  .form-group
+    label(for='sizes') sizes
+    select.form-control(multiple, name="sizes" id="sizes") 
+      each value,key in search.optionLists.sizes
+        option(value = key) #{value}
+
+  .form-group
+    label(for='curves') curves
+    select.form-control(multiple, name="curves" id="curves") 
+      each value,key in search.optionLists.curves
+        option(value = key) #{value}
+
+  .form-group
+    label(for='flexes') flexes
+    select.form-control(multiple, name="flexes" id="flexes") 
+      each value,key in search.optionLists.flexes
+        option(value = key) #{value}
+  
+  input(type="submit")
+
+
+

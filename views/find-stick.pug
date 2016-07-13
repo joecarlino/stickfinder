@@ -1,0 +1,19 @@
+extends templates/layout.pug
+block head
+  script(src='/scripts/app.js')
+block content
+  .row
+    .col-sm-12.col-md-8.col-md-offset-2
+      include ./forms/stick-search.pug
+  .row
+    .col-sm-12.col-md-8.col-md-offset-2
+      if result && result.results && result.results.length
+        table
+          each row in result.results
+            tr
+              td #{row.name}
+              td #{row.id}
+              td #{row.sku}
+              td #{row.flex}
+              td #{row.curve}
+              td #{row.size}
